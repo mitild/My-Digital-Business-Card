@@ -1,0 +1,174 @@
+/*----------------
+GLOBAL
+------------------*/
+*, 
+body,
+html,
+::after, 
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #23252C;
+  color: #DCDCDC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+/*----------------
+LAYOUT
+------------------*/
+#root {
+  height: 95vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+  text-align: center;
+  background-color: #1A1B21;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #2c2e35;
+}
+
+/*----------------
+INFO/HEADER
+------------------*/
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.hero-section {
+  width: 100%;
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.name {
+  font-size: 1.56rem;
+  font-weight: 700;
+  color: #FFF;
+  padding: .84em 0 .25em;
+}
+
+.job-title {
+  font-size: .8rem;
+  font-weight: 400;
+  color: #F3BF99;
+  margin-bottom: .7em;
+}
+
+.projects {
+  display: block;
+  color: #F5F5F5;
+  text-decoration: none;
+  font-size: .64rem;
+}
+
+.btn {
+  font-size: .875rem; 
+  font-weight: 500;
+  padding: .65em 2em;
+  margin: 1em .7em 2.35em;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all .7s;
+  box-shadow: 0 1px 2px #000;
+}
+
+.btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dark-btn {
+  background: #5093E2;
+  color: #FFF;
+}
+
+.dark-btn:hover,
+.dark-btn:focus {
+  background: #FFF;
+  color: #5093E2;
+}
+
+.light-btn {
+  background: #FFF;
+  color: #374151;
+}
+
+.light-btn:hover,
+.light-btn:focus {
+  background: #374151;
+  color: #FFF;
+}
+
+.btn i {
+  padding-right: .57em;
+  font-size: 1rem;
+}
+
+/*----------------
+ABOUT & INTERESTS
+------------------*/
+.article {
+  text-align: left;
+  padding: 0 2.5em;
+  margin-bottom: 1.2em;
+}
+
+.article-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #F5F5F5;
+  margin-bottom: .3125em;
+}
+
+.article-text {
+  font-size: .625em;
+  color: #DCDCDC;
+  letter-spacing: .08em;
+  line-height: 1.45em;
+  opacity: .9;
+}
+
+.interests {
+  margin-bottom: 2em;
+}
+
+/*----------------
+FOOTER
+------------------*/
+footer {
+  background-color: #161619;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  padding: 1.218em 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.contact-icon {
+  width: 25px;
+  transform: scale(1);
+  transition: all .7s;
+}
+
+.contact-icon:hover {
+  transform: scale(1.1);
+}
